@@ -20,7 +20,7 @@ class Studentid extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Student Id Card'),
+        title: const Text('Student Id Card'),
       ),
       body: Center(
         child: Container(
@@ -52,7 +52,7 @@ class Studentid extends StatelessWidget {
                 ],
               ),
               Container(
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                     border: Border(
                         bottom: BorderSide(color: Colors.yellow, width: 5.0))),
                 child: Container(
@@ -62,13 +62,14 @@ class Studentid extends StatelessWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
-                      RotatedBox(
+                      const RotatedBox(
                         quarterTurns:
                             3, // Rotate 270 degrees clockwise to display vertically
                         child: Text(
                           'STUDENT',
                           style: TextStyle(
-                            fontSize: 44,
+                            fontSize: 38,
+                            letterSpacing: 4,
                             color: Colors.white,
                           ),
                         ),
@@ -77,13 +78,13 @@ class Studentid extends StatelessWidget {
                         color: Colors.blue[900],
                         // width: 100,
                         // height: 200,
-                        child: CircleAvatar(
+                        child: const CircleAvatar(
                           radius: 100,
                           backgroundColor: Colors.yellow,
                           child: CircleAvatar(
                             backgroundImage: AssetImage('assets/pic.png'),
                             minRadius: 90,
-                            maxRadius: 93,
+                            maxRadius: 95,
                           ),
                         ),
                       ),
@@ -96,8 +97,8 @@ class Studentid extends StatelessWidget {
                 width: 400,
                 height: 190,
                 child: Container(
-                  padding: EdgeInsets.only(top: 30, left: 10),
-                  child: Column(
+                  padding: const EdgeInsets.only(top: 30, left: 10),
+                  child: const Column(
                     crossAxisAlignment:
                         CrossAxisAlignment.start, // Align text to the left
                     // mainAxisAlignment: MainAxisAlignment.center,
@@ -154,8 +155,8 @@ class Studentid extends StatelessWidget {
                 ),
               ),
               Container(
-                padding: EdgeInsets.only(top: 5),
-                decoration: BoxDecoration(
+                padding: const EdgeInsets.only(top: 5),
+                decoration: const BoxDecoration(
                   border:
                       Border(top: BorderSide(width: 7, color: Colors.yellow)),
                 ),
@@ -172,7 +173,7 @@ class Studentid extends StatelessWidget {
                 width: 400,
                 height: 30, // Adjust the height as needed
                 color: Colors.white, // Background color
-                child: Center(
+                child: const Center(
                   child: Text(
                     'Registered',
                     style: TextStyle(
